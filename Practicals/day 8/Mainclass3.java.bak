@@ -1,0 +1,45 @@
+class Laptop
+
+{
+	String name;
+	String os;
+	int ram;
+
+	String getname()
+	{
+		return name;
+	}
+	String getos()
+	{
+		return os;
+	}
+	int getram()
+	{
+		return ram;
+	}
+
+	void setname(String arg1)
+	{
+		name=arg1;
+	}
+	void setos(String arg1)
+	{
+		os=arg1;
+	}
+	void setram(int arg1)
+	{
+		ram=arg1;
+	}
+
+	class Mainclass3
+	{
+	
+	public static void main(String[] args) 
+	{
+		Laptop L1=new Laptop();
+		L1.setname("HP");
+		L1.setos("Windows10");
+		L1.setram(4);
+		System.out.println(L1.getname()+"\t"+L1.getos()+"\t"+L1.getram());
+	}
+}

@@ -1,0 +1,56 @@
+
+class bike 
+{
+	String name;
+	int engine;
+	static int wheels;
+
+	bike()
+	{
+		//name="TVS";
+		engine=100;
+		//wheels=4;
+	}
+
+	void details()
+	{
+		System.out.println("name :"+name);
+		System.out.println("Engine:"+engine);
+		System.out.println("Wheels:"+wheels);
+	}
+
+	static
+	{
+		System.out.println("static1 started");
+		wheels=2;
+		System.out.println("static1 ended");
+	}
+	static
+	{
+		System.out.println("static2 started");
+		System.out.println("static2 ended");
+	}
+
+	{
+		System.out.println("non static1 started");
+		name="abc";
+		System.out.println("non static1 ended");
+	}
+
+	{
+		System.out.println("non static2 started");
+		System.out.println("non static2 ended");
+	}
+
+}
+class Program3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("mainmethod started");
+		bike b1=new bike();
+		b1.details();
+		System.out.println("mainmethod ended");
+		
+	}
+}
